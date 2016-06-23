@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "SPPatient.h"
+#import "SPDoctor.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    SPPatient* patient1 = [[SPPatient alloc] init];
+    patient1.name = @"Clar";
+    patient1.temperature = 36.6f;
+    
+    SPPatient* patient2 = [[SPPatient alloc] init];
+    patient2.name = @"Tom";
+    patient2.temperature = 38.5f;
+    
+    SPPatient* patient3 = [[SPPatient alloc] init];
+    patient2.name = @"Tom";
+    patient2.temperature = 40.5f;
+    
+    SPPatient* patient4 = [[SPPatient alloc] init];
+    patient2.name = @"Tom";
+    patient2.temperature = 41.5f;
+    
+    SPDoctor* doctor = [[SPDoctor alloc] init]; // doctor like property in patient (root)
+    
+    patient1.delegate = doctor;
+    patient2.delegate = doctor;
+    patient3.delegate = doctor;
+    patient4.delegate = doctor;
+    
+    NSLog(@"%@, are you OK? %@", patient1.name ,[patient1 howAreYou] ? @"Yes" : @"No");
+    NSLog(@"%@, are you OK? %@", patient2.name ,[patient2 howAreYou] ? @"Yes" : @"No");
+    NSLog(@"%@, are you OK? %@", patient3.name ,[patient3 howAreYou] ? @"Yes" : @"No");
+    NSLog(@"%@, are you OK? %@", patient4.name ,[patient4 howAreYou] ? @"Yes" : @"No");
+
     return YES;
 }
 

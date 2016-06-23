@@ -15,6 +15,8 @@
 		782C6DB81D1B031F00D43F8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782C6DB61D1B031F00D43F8D /* LaunchScreen.storyboard */; };
 		782C6DC31D1B031F00D43F8D /* DelegatesTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 782C6DC21D1B031F00D43F8D /* DelegatesTestTests.m */; };
 		782C6DCE1D1B031F00D43F8D /* DelegatesTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 782C6DCD1D1B031F00D43F8D /* DelegatesTestUITests.m */; };
+		78B0E4701D1C4B3000283939 /* SPPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0E46F1D1C4B3000283939 /* SPPatient.m */; };
+		78B0E4731D1C4F7900283939 /* SPDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B0E4721D1C4F7900283939 /* SPDoctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		782C6DC91D1B031F00D43F8D /* DelegatesTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegatesTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		782C6DCD1D1B031F00D43F8D /* DelegatesTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatesTestUITests.m; sourceTree = "<group>"; };
 		782C6DCF1D1B031F00D43F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B0E46E1D1C4B3000283939 /* SPPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPPatient.h; path = ../SPPatient.h; sourceTree = "<group>"; };
+		78B0E46F1D1C4B3000283939 /* SPPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPPatient.m; path = ../SPPatient.m; sourceTree = "<group>"; };
+		78B0E4711D1C4F7900283939 /* SPDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDoctor.h; path = ../SPDoctor.h; sourceTree = "<group>"; };
+		78B0E4721D1C4F7900283939 /* SPDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDoctor.m; path = ../SPDoctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 		782C6DA71D1B031F00D43F8D /* DelegatesTest */ = {
 			isa = PBXGroup;
 			children = (
+				78B0E46E1D1C4B3000283939 /* SPPatient.h */,
+				78B0E46F1D1C4B3000283939 /* SPPatient.m */,
+				78B0E4711D1C4F7900283939 /* SPDoctor.h */,
+				78B0E4721D1C4F7900283939 /* SPDoctor.m */,
 				782C6DAB1D1B031F00D43F8D /* AppDelegate.h */,
 				782C6DAC1D1B031F00D43F8D /* AppDelegate.m */,
 				782C6DAE1D1B031F00D43F8D /* ViewController.h */,
@@ -272,7 +282,9 @@
 			files = (
 				782C6DB01D1B031F00D43F8D /* ViewController.m in Sources */,
 				782C6DAD1D1B031F00D43F8D /* AppDelegate.m in Sources */,
+				78B0E4701D1C4B3000283939 /* SPPatient.m in Sources */,
 				782C6DAA1D1B031F00D43F8D /* main.m in Sources */,
+				78B0E4731D1C4F7900283939 /* SPDoctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				782C6DD41D1B031F00D43F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		782C6DD51D1B031F00D43F8D /* Build configuration list for PBXNativeTarget "DelegatesTestTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				782C6DD71D1B031F00D43F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		782C6DD81D1B031F00D43F8D /* Build configuration list for PBXNativeTarget "DelegatesTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				782C6DDA1D1B031F00D43F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
